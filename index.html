@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="syle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <ul>
+                <li class="date header-top-li"><i class="fa fa-calendar ikon">  </i><span id="date"></span></li>
+                <li class="date-chas header-top-li"><i class="fa fa-clock-o">  </i><span id="date-chas"></span></li>
+                <a href=""><li class="date-chas header-top-li"><img src="https://static.e-auksion.uz/images/eyeglasses.svg" alt="">Специальные возможности</li></a>
+                <li class="date-chas header-top-li"><a href=""><i class="fa fa-laptop">  </i>Демо версия</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    const d = new Date();
+    document.getElementById('date').innerHTML = [d.getFullYear()+ '.' + (d.getMonth() + 1) + '.' +  d.getDate()];
+    document.getElementById('date-chas').innerHTML = [d.getHours()+ '.' + d.getMinutes() + '.' +  d.getSeconds()];
+</script>
+</html>
